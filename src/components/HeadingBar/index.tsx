@@ -1,4 +1,4 @@
-import { Box, Flex, Spacer, Center, Text } from "@chakra-ui/react";
+import { Box, Flex, Spacer, Center, Text, theme } from "@chakra-ui/react";
 
 import { FaPhoneVolume, FaAngleDown } from "react-icons/fa6";
 import { MdMailOutline } from "react-icons/md";
@@ -8,7 +8,7 @@ import { CiShoppingCart } from "react-icons/ci";
 
 export default function HeadingBar() {
   return (
-    <Box bgColor="#7F00FF" color="white">
+    <Box bgColor="purple.450" color="white">
       <Flex width="1217px" margin="auto" justifyContent={"space-between"}>
         <Flex p="4" gap={8}>
           <Center gap={2}>
