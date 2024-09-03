@@ -12,6 +12,8 @@ import {
   GridItem,
   Text,
 } from "@chakra-ui/react";
+import LatestProducts from "./LatestProducts";
+import Offers from "./Offers";
 
 export default function Home() {
   return (
@@ -44,7 +46,7 @@ export default function Home() {
           </GridItem>
           <GridItem w="100%" alignItems="start">
             <Image
-              src="/assets/img/img-slide1.png"
+              src="/assets/img/cadeira.svg"
               alt="slide1"
               width="699"
               height="597"
@@ -64,11 +66,36 @@ export default function Home() {
           </Text>
           <CarrouselCards />
         </Center>
-        {/* <LatestProducts>
-
-        </LatestProducts> */}
+        <Center flexDirection="column">
+          <Text fontSize="3xl" fontWeight="700" color="blue.700">
+            Leatest Products
+          </Text>
+          <LatestProducts />
+        </Center>
+        <Center flexDirection="column" gap={5}>
+          <Text fontSize="2xl" fontWeight="700" color="blue.700">
+            What Shopex Offer!
+          </Text>
+          <Offers />
+        </Center>
       </Flex>
-      {/* <Footer /> */}
+      <Box mb="20"></Box>
+      {/* <Flex bg="purple.200" alignContent="center">
+        <Center maxW="1050" margin="auto">
+          <Image
+            src="/assets/img/cadeira.svg"
+            alt="image"
+            width="550"
+            height="550"
+          />
+          <Box>
+            <Text fontSize="2xl" fontWeight="700" color="blue.700">
+              Unique Features Of leatest & Trending Poducts
+            </Text>
+          </Box>
+        </Center>
+      </Flex> */}
+      <Footer />
     </Flex>
   );
 }
